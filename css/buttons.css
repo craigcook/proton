@@ -1,0 +1,44 @@
+/*
+    Styles for buttons.
+*/
+
+.button {
+    background: rgba(0, 0, 0, .1);
+    border-radius: .3em;
+    border: 2px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 100%;
+    padding: .2em 20px;
+    transition: background-color .15s ease;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.button + .button {
+    margin-left: 20px;
+}
+
+.button-major {
+    font-size: 200%;
+    padding: .25em 25px;
+}
+
+.button-minor {
+    font-size: 75%;
+    padding: .2em 8px;
+}
+
+.button-disabled,
+.button-disabled:hover,
+.button-disabled:focus,
+.button-disabled:active {
+    background: rgba(0, 0, 0, .05);
+    color: #666;
+    cursor: default;
+    opacity: .75;
+}

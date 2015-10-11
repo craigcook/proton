@@ -1,140 +1,48 @@
 @import url('reset.css');
+@import url('buttons.css');
 @import url('grid.css');
 
 body {
     font: 100%/1.5 Calibri, sans-serif;
-    color: #333;
-    background: #fff;
-}
-
-/* @Headings */
-h1, h2, h3, h4, h5, h6, legend {
     color: #000;
-    font-weight: 400;
-    line-height: 1.1;
-    margin: 0 0 .5em;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 28px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-h4,
-legend {
-    font-size: 18px;
-    letter-spacing: normal;
-}
-
-h5 {
-    font-size: 16px;
-    letter-spacing: normal;
-}
-
-h6 {
-    font-size: 14px;
-    letter-spacing: normal;
-}
-
-
-
-/* @Links */
-a:link {
-    color: blue;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: purple;
-}
-
-a:hover,
-a:focus,
-a:active {
-    color: blue;
-}
-
-
-/* @Forms */
-input,
-textarea,
-select {
-    font-family: inherit;
-    font-size: 100%;
-    color: #333;
-}
-
-input,
-textarea {
     background: #fff;
-    padding: 3px 6px;
-    border: 1px solid #333;
-    border-radius: 6px;
-}
-
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-        border-color: #000;
-    }
-
-label {
-    display: block;
-    font-size: 14px;
-    margin: 0 0 .25em;
 }
 
 
-label input {
-    width: auto;
-    background: transparent;
-    border: 0;
-    padding: 0;
-}
-
-:disabled,
-.disabled {
-    opacity: .5;
-}
-
-
-/* @Layout containers */
+/* Page 'sections' are full-width tiers down the page. */
 .section {
     border-bottom: 2px solid rgba(0, 0, 0, .1);
     padding: 0 10px;
 }
 
-.section:after,
-.content:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.section:last-child {
-    border-bottom: 0;
-}
-
+/* Alternate background colors */
 .section:nth-child(even) {
     background: rgba(0, 0, 0, .02);
 }
 
+/* No border on the last section */
+.section:last-child {
+    border-bottom: 0;
+}
+
+/* Clear floats */
+.section:after,
+.content:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+/* Content goes in a wrapper inside a section; this sets your content width. */
 .content {
-    margin: 0 auto;
-    min-width: 280px;
     max-width: 1000px;
+    min-width: 280px;
+
+    background: rgba(0, 0, 0, .05);
+    margin: 0 auto;
+    outline: 1px solid rgba(0, 0, 0, .1);
+    overflow: hidden;
     padding: 20px 10px;
     position: relative;
-    overflow: hidden;
-    background: rgba(0, 0, 0, .05);
-    outline: 1px solid rgba(0, 0, 0, .1);
 }
 
