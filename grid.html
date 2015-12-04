@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proton: The Grid</title>
+
+    <link rel="stylesheet" type="text/css" href="css/proton.css">
+
+  </head>
+  <body>
+
+    <section class="section">
+      <div class="content">
+        <h1>Proton Grid</h1>
+
+        <p>Proton's grid comprises twelve fluid columns with fixed, 20-pixel
+          gutters. Each column is 8.333% of the total container width (100% ÷ 12).</p>
+
+        <p>The gutters are produced with padding on the columns; 10 pixels of
+          padding inside adjacent columns gives 20 pixels of space between
+          column contents. This only works in browsers that support
+          <code>border-box</code> and breaks horribly in older browsers with
+          the standard box model. This is unshippable.</p>
+
+        <div class="row">
+          <div class="col">
+            <p>One</p>
+          </div>
+
+          <div class="col">
+            <p>Two</p>
+          </div>
+
+          <div class="col">
+            <p>Three</p>
+          </div>
+
+          <div class="col">
+            <p>Four</p>
+          </div>
+
+          <div class="col">
+            <p>Five</p>
+          </div>
+
+          <div class="col">
+            <p>Six</p>
+          </div>
+
+          <div class="col">
+            <p>Seven</p>
+          </div>
+
+          <div class="col">
+            <p>Eight</p>
+          </div>
+
+          <div class="col">
+            <p>Nine</p>
+          </div>
+
+          <div class="col">
+            <p>Ten</p>
+          </div>
+
+          <div class="col">
+            <p>Eleven</p>
+          </div>
+
+          <div class="col">
+            <p>Twelve</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content">
+        <h2>Column Spans</h2>
+
+        <div class="row">
+          <div class="col span-six">
+            <p>Six</p>
+          </div>
+
+          <div class="col span-three">
+            <p>Three</p>
+          </div>
+
+          <div class="col span-three">
+            <p>Three</p>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col span-two">
+            <p>Two</p>
+          </div>
+
+          <div class="col span-eight">
+            <p>Eight</p>
+          </div>
+
+          <div class="col span-two">
+            <p>Two</p>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col span-four">
+            <p>Four</p>
+          </div>
+
+          <div class="col span-four">
+            <p>Four</p>
+          </div>
+
+          <div class="col span-four">
+            <p>Four</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content">
+
+        <div class="row">
+          <div class="col">
+            <p>One</p>
+          </div>
+
+          <div class="col span-eleven">
+            <p>Eleven</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col span-two">
+            <p>Two</p>
+          </div>
+
+          <div class="col span-ten">
+            <p>Ten</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col span-three">
+            <p>Three</p>
+          </div>
+
+          <div class="col span-nine">
+            <p>Nine</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col span-four">
+            <p>Four</p>
+          </div>
+
+          <div class="col span-eight">
+            <p>Eight</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col span-five">
+            <p>Five</p>
+          </div>
+
+          <div class="col span-seven">
+            <p>Seven</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col span-six">
+            <p>Six</p>
+          </div>
+
+          <div class="col span-six">
+            <p>Six</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col span-seven">
+            <p>Seven</p>
+          </div>
+
+          <div class="col span-five">
+            <p>Five</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col span-eight">
+            <p>Eight</p>
+          </div>
+
+          <div class="col span-four">
+            <p>Four</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col span-nine">
+            <p>Nine</p>
+          </div>
+
+          <div class="col span-three">
+            <p>Three</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col span-ten">
+            <p>Ten</p>
+          </div>
+
+          <div class="col span-two">
+            <p>Two</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col span-eleven">
+            <p>Eleven</p>
+          </div>
+
+          <div class="col">
+            <p>One</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </body>
+</html>

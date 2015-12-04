@@ -1,11 +1,18 @@
+/*
+    Base styles for the Proton framework.
+    This style sheet imports the others. It's bad for performance but good for reference.
+*/
+
 @import url('reset.css');
-@import url('buttons.css');
 @import url('grid.css');
+@import url('buttons.css');
+@import url('forms.css');
+
 
 body {
     font: 100%/1.5 Calibri, sans-serif;
     color: #000;
-    background: #fff;
+    background-color: #fff;
 }
 
 
@@ -15,17 +22,21 @@ body {
     padding: 0 10px;
 }
 
-/* Alternate background colors */
-.section:nth-child(even) {
-    background: rgba(0, 0, 0, .02);
+.section h1 {
+    font-size: 2rem;
 }
 
-/* No border on the last section */
+/* Alternate background colors to show sections. */
+.section:nth-child(even) {
+    background-color: rgba(0, 0, 0, .02);
+}
+
+/* No border on the last section. */
 .section:last-child {
     border-bottom: 0;
 }
 
-/* Clear floats */
+/* Clear floats. */
 .section:after,
 .content:after {
     clear: both;
@@ -33,16 +44,18 @@ body {
     display: table;
 }
 
-/* Content goes in a wrapper inside a section; this sets your content width. */
+/*
+   Actual content goes in a .content wrapper inside a .section - this sets your content width.
+   Adjust the max and min as desired, or set breakpoints to constrain fluidity.
+*/
 .content {
-    max-width: 1000px;
+    max-width: 1200px;
     min-width: 280px;
 
-    background: rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, .05);
     margin: 0 auto;
     outline: 1px solid rgba(0, 0, 0, .1);
     overflow: hidden;
     padding: 20px 10px;
     position: relative;
 }
-

@@ -1,5 +1,10 @@
-/* And then one day... I got in. */
+/*
+    And then one day... I got in.
+*/
 
+/*
+    A row is a container for columns.
+*/
 .row {
     margin-left: -10px;
     margin-right: -10px;
@@ -15,245 +20,63 @@
     clear: both;
 }
 
-.col {
-    background: rgba(0, 0, 0, .05);
-    outline: 1px solid rgba(0, 0, 0, .1);
-    overflow: hidden;
-    padding: 0 10px;
-}
-
+/*
+    This is in a media query so only modern browsers can see it.
+    (Support for media queries is the first media query.)
+*/
 @media only screen {
     .col {
+        background-color: rgba(0, 0, 0, .05);
+        outline: 1px solid rgba(0, 0, 0, .1);
+        overflow: hidden;
+        padding: 0 10px;
         float: left;
-        width: 100%;
+        width: 8.333%;
         -webkit-box-sizing: border-box;
            -moz-box-sizing: border-box;
                 box-sizing: border-box;
     }
 
-    /* This is arguably useless but you never know. */
-    .one-column > .col {
-        width: 100%;
-    }
-
-    .two-columns > .col {
-        width: 50%;
-    }
-
-    .three-columns > .col {
-        width: 33.333%;
-    }
-    .three-columns > .span-two {
-        width: 66.666%;
-    }
-
-    .four-columns > .col {
-        width: 25%;
-    }
-    .four-columns > .span-two {
-        width: 50%;
-    }
-    .four-columns > .span-three {
-        width: 75%;
-    }
-
-    .five-columns > .col {
-        width: 20%;
-    }
-    .five-columns > .span-two {
-        width: 40%;
-    }
-    .five-columns > .span-three {
-        width: 60%;
-    }
-    .five-columns > .span-four {
-        width: 80%;
-    }
-
-    .six-columns > .col {
+    .span-two {
         width: 16.666%;
     }
-    .six-columns > .span-two {
-        width: 33.333%;
-    }
-    .six-columns > .span-three {
-        width: 50%;
-    }
-    .six-columns > .span-four {
-        width: 66.666%;
-    }
-    .six-columns > .span-five {
-        width: 83.333%;
-    }
-
-    .seven-columns > .col {
-        width: 14.285%;
-    }
-    .seven-columns > .span-two {
-        width: 28.571%;
-    }
-    .seven-columns > .span-three {
-        width: 42.855%;
-    }
-    .seven-columns > .span-four {
-        width: 57.14%;
-    }
-    .seven-columns > .span-five {
-        width: 71.425%;
-    }
-    .seven-columns > .span-six {
-        width: 85.71%;
-    }
-
-    .eight-columns > .col {
-        width: 12.5%;
-    }
-    .eight-columns > .span-two {
-        width: 25%;
-    }
-    .eight-columns > .span-three {
-        width: 37.5%;
-    }
-    .eight-columns > .span-four {
-        width: 50%;
-    }
-    .eight-columns > .span-five {
-        width: 72.5%;
-    }
-    .eight-columns > .span-six {
-        width: 75%;
-    }
-    .eight-columns > .span-seven {
-        width: 87.5%;
-    }
-
-    .nine-columns > .col {
-        width: 11.111%;
-    }
-    .nine-columns > .span-two {
-        width: 22.222%;
-    }
-    .nine-columns > .span-three {
-        width: 33.333%;
-    }
-    .nine-columns > .span-four {
-        width: 44.444%;
-    }
-    .nine-columns > .span-five {
-        width: 55.555%;
-    }
-    .nine-columns > .span-six {
-        width: 66.666%;
-    }
-    .nine-columns > .span-seven {
-        width: 77.777%;
-    }
-    .nine-columns > .span-eight {
-        width: 88.888%;
-    }
-
-    .ten-columns > .col {
-        width: 10%;
-    }
-    .ten-columns > .span-two {
-        width: 20%;
-    }
-    .ten-columns > .span-three {
-        width: 30%;
-    }
-    .ten-columns > .span-four {
-        width: 40%;
-    }
-    .ten-columns > .span-five {
-        width: 50%;
-    }
-    .ten-columns > .span-six {
-        width: 60%;
-    }
-    .ten-columns > .span-seven {
-        width: 70%;
-    }
-    .ten-columns > .span-eight {
-        width: 80%;
-    }
-    .ten-columns > .span-nine {
-        width: 90%;
-    }
-
-    .eleven-columns > .col {
-        width: 9.09%;
-    }
-    .eleven-columns > .span-two {
-        width: 18.18%;
-    }
-    .eleven-columns > .span-three {
-        width: 27.27%;
-    }
-    .eleven-columns > .span-four {
-        width: 36.36%;
-    }
-    .eleven-columns > .span-five {
-        width: 45.45%;
-    }
-    .eleven-columns > .span-six {
-        width: 54.54%;
-    }
-    .eleven-columns > .span-seven {
-        width: 63.63%;
-    }
-    .eleven-columns > .span-eight {
-        width: 72.72%;
-    }
-    .eleven-columns > .span-nine {
-        width: 81.81%;
-    }
-    .eleven-columns > .span-ten {
-        width: 90.9%;
-    }
-
-    .twelve-columns > .col {
-        width: 8.333%;
-    }
-    .twelve-columns > .span-two {
-        width: 16.666%;
-    }
-    .twelve-columns > .span-three {
+    .span-three {
         width: 24.999%;
     }
-    .twelve-columns > .span-four {
+    .span-four {
         width: 33.332%;
     }
-    .twelve-columns > .span-five {
+    .span-five {
         width: 41.665%;
     }
-    .twelve-columns > .span-six {
+    .span-six {
         width: 49.998%;
     }
-    .twelve-columns > .span-seven {
-        width: 57.331%;
+    .span-seven {
+        width: 58.331%;
     }
-    .twelve-columns > .span-eight {
+    .span-eight {
         width: 66.664%;
     }
-    .twelve-columns > .span-nine {
+    .span-nine {
         width: 74.997%;
     }
-    .twelve-columns > .span-ten {
+    .span-ten {
         width: 83.33%;
     }
-    .twelve-columns > .span-eleven {
+    .span-eleven {
         width: 91.663%;
     }
-
-    /* Keep this at the end of all column rules. Cascade order, doncha know. */
-    .row > .span-all {
+    .span-twelve,
+    .span-all {
         width: 100%;
+        float: none;
+        clear: both;
     }
-
 }
 
-
-@media screen and (max-width: 30em) {
+/* Columns go full-width and stack in small viewports. */
+@media screen and (max-width: 30rem) {
 
     .row > .col {
         width: 100%;
