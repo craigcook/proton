@@ -2,9 +2,7 @@
     And then one day... I got in.
 */
 
-/*
-    A row is a container for columns.
-*/
+/*  A row is a container for columns. It clears the floats inside it. */
 .row {
     margin-left: -10px;
     margin-right: -10px;
@@ -14,24 +12,21 @@
 .row:after {
     content: '';
     display: table;
-}
-
-.row:after {
     clear: both;
 }
 
-/*
-    This is in a media query so only modern browsers can see it.
-    (Support for media queries is the first media query.)
+/*  A column is a container for content. Use column spans to set proportions
+    and create your grid layout. This is in a media query so only modern
+    browsers can see it (Support for media queries is the first media query).
 */
 @media only screen {
     .col {
+        width: 8.333%;
+        float: left;
         background-color: rgba(0, 0, 0, .05);
         outline: 1px solid rgba(0, 0, 0, .1);
         overflow: hidden;
         padding: 0 10px;
-        float: left;
-        width: 8.333%;
         -webkit-box-sizing: border-box;
            -moz-box-sizing: border-box;
                 box-sizing: border-box;
@@ -75,7 +70,7 @@
     }
 }
 
-/* Columns go full-width and stack in small viewports. */
+/*  Columns go full-width and stack in small viewports. */
 @media screen and (max-width: 30rem) {
 
     .row > .col {

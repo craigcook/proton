@@ -1,6 +1,10 @@
 /*
     Base styles for the Proton framework.
+
     This style sheet imports the others. It's bad for performance but good for reference.
+    Use this as a starting point for your particular project, importing the only pieces
+    you actually need and tailoring the global layout (widths and breakpoints) to suit
+    your needs.
 */
 
 @import url('reset.css');
@@ -16,7 +20,7 @@ body {
 }
 
 
-/* Page 'sections' are full-width tiers down the page. */
+/*  Page 'sections' are full-width tiers down the page. */
 .section {
     border-bottom: 2px solid rgba(0, 0, 0, .1);
     padding: 0 10px;
@@ -26,17 +30,17 @@ body {
     font-size: 2rem;
 }
 
-/* Alternate background colors to show sections. */
+/*  Alternate background colors to show sections. */
 .section:nth-child(even) {
     background-color: rgba(0, 0, 0, .02);
 }
 
-/* No border on the last section. */
+/*  No border on the last section. */
 .section:last-child {
     border-bottom: 0;
 }
 
-/* Clear floats. */
+/*  Clear floats. */
 .section:after,
 .content:after {
     clear: both;

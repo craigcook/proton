@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proton: The Forms</title>
+
+    <link rel="stylesheet" type="text/css" href="css/proton.css">
+
+  </head>
+  <body>
+
+    <section class="section">
+      <div class="content">
+        <h1>Proton Forms</h1>
+        <p>Use paragraphs and lists to gives forms a sensible structure.</p>
+
+        <p>Always include a <code>label</code> before a form field &ndash; the
+        <code>placeholder</code> attribute is <em>not</em> a substitute for a
+        label. Labels are styled as <code>display: block;</code> in Proton so
+        they will appear above their control, which is generally the best place
+        for them.</p>
+
+        <form>
+          <fieldset>
+            <legend>A super-simple form</legend>
+            <p>
+              <label for="ex1">Field Label</label>
+              <input type="text" id="ex1" placeholder="example input">
+              <button type="submit" class="button">Submit</button>
+            </p>
+          </fieldset>
+        </form>
+
+        <form>
+          <fieldset>
+            <legend>Fake comment form</legend>
+            <p>
+              <label for="cmt-name">Your made up name</label>
+              <input type="text" id="cmt-name" name="name">
+            </p>
+            <p>
+              <label for="cmt-comment">Your horrible comments</label>
+              <textarea id="cmt-comment" name="comment" cols="50" rows="4"></textarea>
+            </p>
+            <p>
+              <button type="submit" class="button">Submit</button>
+            </p>
+          </fieldset>
+        </form>
+
+        <p>For checkboxes and radio buttons, wrap the <code>label</code> element
+          around the <code>input</code> with the label text after the control.</p>
+
+        <form>
+          <ul>
+            <li><label for="check1"><input type="checkbox" name="check1" id="check1"> Option one</label></li>
+            <li><label for="check2"><input type="checkbox" name="check2" id="check2"> Option two</label></li>
+          </ul>
+
+          <ul>
+            <li><label for="radio1"><input type="radio" name="radios" id="radio1"> Option one</label></li>
+            <li><label for="radio2"><input type="radio" name="radios" id="radio2"> Option two</label></li>
+          </ul>
+        </form>
+
+        <h2>Inline controls</h2>
+        <p>You can use the <code>inline</code> class on a list to arrange
+        controls on the same baseline. This is handy for a small set of options
+        or two or three related fields in a longer form.</p>
+
+        <form>
+          <ul class="inline">
+            <li><label for="radio-a"><input type="radio" name="inline-radios" id="radio-a"> A</label></li>
+            <li><label for="radio-b"><input type="radio" name="inline-radios" id="radio-b"> B</label></li>
+            <li><label for="radio-c"><input type="radio" name="inline radios" id="radio-c"> C</label></li>
+            <li><label for="radio-d"><input type="radio" name="inline radios" id="radio-d"> D</label></li>
+          </ul>
+
+          <ol class="inline">
+            <li><label for="name-given">Given name</label> <input type="text" id="name-given" name="givenname"></li>
+            <li><label for="name-family">Family name</label> <input type="text" id="name-family" name="familyname"></li>
+          </ol>
+        </form>
+
+        <p>The <code>inline</code> class also overrides the block styling of
+        labels, but don't abuse it for this purpose. Remember, Proton is for
+        prototyping - think first about how your forms should work, not how they
+        should look.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content">
+        <h2>More complex forms</h2>
+
+        <p>Use <code>fieldset</code> to group related controls. You can nest
+        fieldsets within fieldsets for groups within groups, but don't go too
+        crazy.</p>
+
+        <form>
+          <fieldset>
+            <legend>Newsletter subscription</legend>
+            <ol>
+              <li>
+                <label for="news-name">Name</label>
+                <input type="text" id="news-name" name="name">
+              </li>
+              <li>
+                <label for="news-email">E-mail</label>
+                <input type="email" id="news-email" name="email" placeholder="you@example.com">
+              </li>
+              <li>
+                <label for="news-lang">Language</label>
+                <select id="news-lang" name="lang">
+                  <option selected disabled>select</option>
+                  <option value="de" lang="de">Deutsch</option>
+                  <option value="en" lang="en">English</option>
+                  <option value="es" lang="es">Español</option>
+                  <option value="fr" lang="fr">Français</option>
+                  <option value="ja" lang="ja">日本語</option>
+                  <option value="tlh" lang="tlh">tlhIngan Hol</option>
+                </select>
+              </li>
+              <li class="inline">
+                <fieldset>
+                  <legend>Format</legend>
+                  <ul>
+                    <li>
+                      <label for="news-format-text"><input type="radio" name="format" id="news-format-text"> Text</label>
+                    </li>
+                    <li>
+                      <label for="news-format-html"><input type="radio" name="format" id="news-format-html"> HTML</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </li>
+              <li>
+                <label for="news-agree"><input type="checkbox" id="news-agree" name="agree"> I agree to the privacy policy</label>
+              </li>
+              <li>
+                <button type="submit" class="button">Subscribe</button>
+              </li>
+            </ol>
+          </fieldset>
+        </form>
+
+      </div>
+    </section>
+
+  </body>
+</html>

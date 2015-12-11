@@ -1,0 +1,70 @@
+/*
+    Styles for forms.
+*/
+
+form li {
+    margin-bottom: 1em;
+}
+
+legend {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 0 0 .25em;
+    padding: 0 10px;
+}
+
+
+input:not([type='checkbox']):not([type='radio']),
+textarea {
+    border: 2px solid rgba(0, 0, 0, .25);
+    padding: .5em 10px;
+    min-width: 220px;
+    max-width: 100%;
+}
+
+input:not([type='checkbox']):not([type='radio']):focus,
+textarea:focus {
+    border-color: rgba(0, 0, 0, .5);
+}
+
+select {
+    min-width: 220px;
+    max-width: 100%;
+}
+
+input + .button {
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+
+.inline legend {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0 10px .5em;
+}
+
+.inline label {
+    display: inline;
+    padding-right: 0;
+    margin-right: 10px;
+}
+
+.inline input:not([type='checkbox']):not([type='radio']) {
+    min-width: 120px;
+}
+
+.inline ul,
+.inline ol {
+    margin: 0;
+}
+
+.inline li {
+    display: inline;
+    margin-right: 20px;
+}
