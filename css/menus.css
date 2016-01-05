@@ -1,0 +1,74 @@
+/*
+    Styles for menus.
+*/
+
+.menu {
+    margin: 0 0 2em;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.menu li:last-child {
+    border: 0;
+}
+
+.menu ul,
+.menu ol {
+    margin: 0;
+}
+
+.menu li li {
+    font-size: 80%;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: .25em 10px;
+}
+
+.menu a:hover,
+.menu a:focus {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, .5);
+    transition: background-color .15s ease;
+}
+
+.menu li li a {
+    padding: .25em 20px;
+}
+
+.menu-bar li {
+    display: inline-block;
+    border-bottom: 0;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.menu-bar li ul,
+.menu-bar li ol {
+    background: #eee;
+    position: absolute;
+    display: none;
+    width: 10rem;
+    padding: .25em 0;
+}
+
+.menu-bar li:hover ul,
+.menu-bar li:hover ol {
+    display: block;
+}
+
+.menu-bar li li {
+    display: block;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.menu-bar li li a {
+    padding: .25em 10px;
+}
