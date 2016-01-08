@@ -19,4 +19,4 @@ a img { border: 0; }
 input, select, textarea { font-family: inherit; font-size: 100%; }
 img, video, object, embed { max-width: 100%; height: auto; }
 
-form ol, form ul, fieldset ol, fieldset ul { list-style: none; }
+form ol, form ul, fieldset ol, fieldset ul { list-style: none; margin-left: 0; }
