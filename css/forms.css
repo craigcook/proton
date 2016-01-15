@@ -24,6 +24,9 @@ textarea {
     padding: .5em 10px;
     min-width: 220px;
     max-width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 input:not([type='checkbox']):not([type='radio']):focus,

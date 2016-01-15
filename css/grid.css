@@ -4,8 +4,8 @@
 
 /*  A row is a container for columns. It clears the floats inside it. */
 .row {
-    margin-left: -10px;
-    margin-right: -10px;
+    display: flex;
+    margin: 0 -10px 20px;
 }
 
 .row:before,
@@ -72,6 +72,10 @@
 
 /*  Columns go full-width and stack in small viewports. */
 @media screen and (max-width: 30rem) {
+
+    .row {
+        display: block;
+    }
 
     .row > .col {
         width: 100%;

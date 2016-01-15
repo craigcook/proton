@@ -1,0 +1,30 @@
+/*
+    Styles for presentation.
+    Because even prototypes usually need some purely visual touches.
+*/
+.text-giant {
+    font-size: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padded {
+    padding: 40px;
+}
+
+img.align-left {
+    float: left;
+    margin-right: 20px;
+}
+
+img.align-right {
+    float: right;
+    margin-left: 20px;
+}
+
+img.align-center {
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,95 @@
+/*
+    Styles for galleries.
+*/
+
+.gallery {
+    list-style: none;
+    margin: 0 -10px;
+}
+
+.gallery li {
+    float: left;
+    margin: 0 0 20px;
+    padding: 0 10px;
+    outline: 1px solid rgba(0, 0, 0, .1);
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.gallery.two-per li {
+    width: 50%;
+}
+.gallery.two-per li:nth-child(even) {
+    clear: left;
+}
+
+.gallery.three-per li {
+    width: 33.333%;
+}
+.gallery.three-per li:nth-child(3n+1) {
+    clear: left;
+}
+
+.gallery.four-per li {
+    width: 25%;
+}
+.gallery.four-per li:nth-child(4n+1) {
+    clear: left;
+}
+
+.gallery.five-per li {
+    width: 20%;
+}
+.gallery.five-per li:nth-child(5n+1) {
+    clear: left;
+}
+
+.gallery.six-per li {
+    width: 16.666%;
+}
+.gallery.six-per li:nth-child(6n+1) {
+    clear: left;
+}
+
+.gallery.seven-per li {
+    width: 14.285%;
+}
+.gallery.seven-per li:nth-child(7n+1) {
+    clear: left;
+}
+
+.gallery.eight-per li {
+    width: 12.5%;
+}
+.gallery.eight-per li:nth-child(8n+1) {
+    clear: left;
+}
+
+.gallery.nine-per li {
+    width: 11.111%;
+}
+.gallery.nine-per li:nth-child(9n+1) {
+    clear: left;
+}
+
+.gallery.ten-per li {
+    width: 10%;
+}
+.gallery.ten-per li:nth-child(10n+1) {
+    clear: left;
+}
+
+.gallery.eleven-per li {
+    width: 9.09%;
+}
+.gallery.eleven-per li:nth-child(11n+1) {
+    clear: left;
+}
+
+.gallery.twelve-per li {
+    width: 8.333%;
+}
+.gallery.twelve-per li:nth-child(12n+1) {
+    clear: left;
+}
