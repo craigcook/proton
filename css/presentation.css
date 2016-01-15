@@ -2,12 +2,25 @@
     Styles for presentation.
     Because even prototypes usually need some purely visual touches.
 */
-.text-giant {
+
+.text-huge {
     font-size: 3rem;
+}
+
+.text-large {
+    font-size: 2rem;
+}
+
+.text-small {
+    font-size: .75rem;
 }
 
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .padded {
@@ -26,5 +39,5 @@ img.align-right {
 
 img.align-center {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }

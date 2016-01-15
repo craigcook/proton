@@ -2,18 +2,12 @@
     And then one day... I got in.
 */
 
-/*  A row is a container for columns. It clears the floats inside it. */
+/*  A row is a container for columns. */
 .row {
     display: flex;
     margin: 0 -10px 20px;
 }
 
-.row:before,
-.row:after {
-    content: '';
-    display: table;
-    clear: both;
-}
 
 /*  A column is a container for content. Use column spans to set proportions
     and create your grid layout. This is in a media query so only modern
@@ -22,7 +16,6 @@
 @media only screen {
     .col {
         width: 8.333%;
-        float: left;
         background-color: rgba(0, 0, 0, .05);
         outline: 1px solid rgba(0, 0, 0, .1);
         overflow: hidden;
@@ -65,8 +58,6 @@
     .span-twelve,
     .span-all {
         width: 100%;
-        float: none;
-        clear: both;
     }
 }
 
@@ -79,7 +70,6 @@
 
     .row > .col {
         width: 100%;
-        float: none;
     }
 
 }
