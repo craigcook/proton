@@ -8,57 +8,72 @@
     margin: 0 -10px 20px;
 }
 
+/* A column is a container for content. */
+.col {
+    background-color: rgba(0, 0, 0, .05);
+    outline: 1px solid rgba(0, 0, 0, .1);
+    overflow: hidden;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
 
-/*  A column is a container for content. Use column spans to set proportions
-    and create your grid layout. This is in a media query so only modern
-    browsers can see it (Support for media queries is the first media query).
+/*  Use column spans to set proportions and create your grid-based
+    layout. These rules are in a media query so only modern browsers
+    can see them (Support for media queries is the first media query).
 */
-@media only screen {
+@media screen and (min-width: 30rem) {
+
     .col {
         width: 8.333%;
-        background-color: rgba(0, 0, 0, .05);
-        outline: 1px solid rgba(0, 0, 0, .1);
-        overflow: hidden;
-        padding: 0 10px;
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
     }
 
     .span-two {
         width: 16.666%;
     }
+
     .span-three {
         width: 24.999%;
     }
+
     .span-four {
         width: 33.332%;
     }
+
     .span-five {
         width: 41.665%;
     }
+
     .span-six {
         width: 49.998%;
     }
+
     .span-seven {
         width: 58.331%;
     }
+
     .span-eight {
         width: 66.664%;
     }
+
     .span-nine {
         width: 74.997%;
     }
+
     .span-ten {
         width: 83.33%;
     }
+
     .span-eleven {
         width: 91.663%;
     }
+
     .span-twelve,
     .span-all {
         width: 100%;
     }
+
 }
 
 /*  Columns go full-width and stack in small viewports. */
